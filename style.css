@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: white;
+
+  height: 100vh;
+
+  display: grid;
+}
+
+main {
+  justify-self: center;
+
+  align-self: center;
+
+  display: flex;
+  gap: 19.2rem;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+  font-weight: 500;
+
+  color: #323238;
+}
+
+main .buttons button {
+  cursor: pointer;
+}
+
+.mainBtns {
+  display: flex;
+  gap: 4rem;
+}
+
+.mainBtns button {
+  background: none;
+  border: none;
+
+  transition: transform 0.2s;
+}
+
+.mainBtns button:hover {
+  transform: scale(1.1);
+}
+
+.soundBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.soundBtns button {
+  width: 13.8rem;
+  height: 15.2rem;
+
+  background: #e1e1e6;
+
+  border-radius: 2.4rem;
+  border: none;
+
+  transition: transform 0.2s;
+}
+
+.soundBtns button:hover {
+  transform: scale(1.1);
+}
+
+.soundBtns .pressed {
+  background: #02799d;
+}
+
+.soundBtns .pressed path {
+  fill: white;
+}
+
+.row1 {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.row2 {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.hide {
+  display: none;
+}
